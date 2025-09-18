@@ -94,6 +94,28 @@ export default {
             height: "0",
           },
         },
+        float: {
+          "0%, 100%": { transform: "translateY(0px)" },
+          "50%": { transform: "translateY(-20px)" }
+        },
+        "pulse-glow": {
+          "0%, 100%": { 
+            boxShadow: "0 0 20px hsl(var(--primary) / 0.3)"
+          },
+          "50%": { 
+            boxShadow: "0 0 40px hsl(var(--primary) / 0.6)"
+          }
+        },
+        slideUp: {
+          from: {
+            opacity: "0",
+            transform: "translateY(30px)"
+          },
+          to: {
+            opacity: "1",
+            transform: "translateY(0)"
+          }
+        }
       },
     },
   },
